@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:music_app/models/song_model.dart';
 import 'package:music_app/screens/home_screen.dart';
 import 'package:music_app/screens/playlist_screen.dart';
 import 'package:music_app/screens/song_screen.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
               ),
               GetPage(
                 name: '/playlist',
-                page: () => const PlaylistScreen(),
+                page: () => const SongScreen(),
               )
             ]);
       },
